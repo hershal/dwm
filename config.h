@@ -47,7 +47,7 @@ static const Layout layouts[] = {
 
 /* commands */
 static const char *dmenucmd[] = { "dmenu_run", "-fn", font, "-nb", normbgcolor, "-nf", normfgcolor, "-sb", selbgcolor, "-sf", selfgcolor, NULL };
-static const char *termcmd[]  = { "uxterm", NULL };
+static const char *termcmd[]  = { "/nfs/site/home/hhbhave/102/build/rxvt-unicode-9.20/src/rxvt", NULL };
 
 static Key keys[] = {
 	/* modifier                     key        function        argument */
