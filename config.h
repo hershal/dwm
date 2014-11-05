@@ -51,7 +51,8 @@ static const char *termcmd[]  = { "/nfs/site/home/hhbhave/102/build/rxvt-unicode
 
 static Key keys[] = {
         /* modifier                     key        function        argument */
-        { MODKEY,                       XK_p,      spawn,          {.v = dmenucmd } },
+        /* Don't have working dmenu yet */
+        /* { MODKEY,                       XK_p,      spawn,          {.v = dmenucmd } }, */
         { MODKEY|ShiftMask,             XK_Return, spawn,          {.v = termcmd } },
         { MODKEY,                       XK_o,      togglebar,      {0} },
         { MODKEY,                       XK_j,      focusstack,     {.i = +1 } },
