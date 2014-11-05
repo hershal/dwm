@@ -67,8 +67,12 @@ static Key keys[] = {
         /* Conflicts with bash/emacs bindings; I shouldn't use it anyway  */
         /* { MODKEY,                       XK_f,      setlayout,      {.v = &layouts[1]} }, */
         { MODKEY,                       XK_m,      setlayout,      {.v = &layouts[2]} },
-        { MODKEY,                       XK_space,  setlayout,      {0} },
-        { MODKEY|ShiftMask,             XK_space,  togglefloating, {0} },
+        /* Monocle mode works better here */
+        /* { MODKEY,                       XK_space,  setlayout,      {0} }, */
+        /* Don't need floating windows or am capable of using the
+           mouse for floating windows (as is required to move them
+           anyway) */
+        /* { MODKEY|ShiftMask,             XK_space,  togglefloating, {0} }, */
         { MODKEY,                       XK_0,      view,           {.ui = ~0 } },
         { MODKEY|ShiftMask,             XK_0,      tag,            {.ui = ~0 } },
         /* Not using multiple monitors; conflicts with emacs bindings */
